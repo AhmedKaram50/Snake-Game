@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game | Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block">
+        <canvas id="block" width="140" height="140"></canvas>
+    </div>
+    <div class="holder">
+        <div class="scores">
+            <div class="score">
+                <div class="img-holder">
+                    <img src="score.png" alt="cup">
+                </div>
+                <p>Score : <span id="score">0</span></p>
+            </div>
+            <div class="best">
+                <div class="img-holder">
+                    <img src="winner-cup.png" alt="score">
+                </div>
+                <p>Best : <span id="best">0</span></p>
+            </div>
+        </div>
+        <canvas id="snake" width="550" height="550"></canvas>
+    </div>
+    <div class="option">
+        <div class="icon"><img src="option.png" alt="option"></div>
+        <h2>Style</h2>
+        <div class="style">
+            <div class="theme" data-value="0">
+                <img src="Board/Board1.PNG" alt="board">
+            </div>
+            <div class="theme" data-value="1">
+                <img src="Board/Board2.PNG" alt="board">
+            </div>
+            <div class="theme" data-value="2">
+                <img src="Board/Board3.PNG" alt="board">
+            </div>
+            <div class="theme" data-value="3">
+                <img src="Board/Board4.PNG" alt="board">
+            </div>
+            <div class="theme active" data-value="4">
+                <img src="Board/Board5.PNG" alt="board">
+            </div>
+            <div class="theme" data-value="5">
+                <img src="Board/Board6.PNG" alt="board">
+            </div>
+        </div>
+    </div>
+
+    <script src="snake-object.js"></script>
+    <script src="snake.js"></script>
+</body>
+</html>
