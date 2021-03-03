@@ -123,10 +123,6 @@ let scoreElement = document.getElementById("score"),
     score = 0,
     best = 50;
 
-console.log(randomFoodX)
-console.log(randomFoodY)
-console.log(snakeObj.randomSnakeX)
-console.log(snakeObj.randomSnakeY)
 setInterval(() => {
     snakeContext.clearRect(0, 0, 550, 550)
     blockColor(firstSquare, secondSquare)
